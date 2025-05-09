@@ -91,4 +91,5 @@ if __name__ == "__main__":
         )
 
     # Launch with public sharing enabled
-    demo.launch(share=True, share_duration=72)
+    public_url = demo.launch(share=True, share_duration=72)
+    print(f"Public sharing link: {public_url}")
