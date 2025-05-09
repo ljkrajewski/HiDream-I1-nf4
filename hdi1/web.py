@@ -19,7 +19,6 @@ RESOLUTION_OPTIONS = [
 def parse_resolution(resolution_str):
     return tuple(map(int, resolution_str.split("(")[0].strip().split(" × ")))
 
-
 def gen_img_helper(model, prompt, res, seed):
     global pipe, current_model
 
@@ -37,7 +36,6 @@ def gen_img_helper(model, prompt, res, seed):
     # 2. Generate image
     res = parse_resolution(res)
     return generate_image(pipe, model, prompt, res, seed)
-
 
 if __name__ == "__main__":
     logging.getLogger("transformers.modeling_utils").setLevel(logging.ERROR)
@@ -92,4 +90,5 @@ if __name__ == "__main__":
             outputs=[output_image, seed_used]
         )
 
-    demo.launch()
+    # Launch with public sharing enabled
+    demo.launch(share=True, share_duration=72)
