@@ -1,6 +1,6 @@
-As you can see, this is a fork of a fork for us poor folk who don't have a GPU with 20GB of VRAM to play with. The idea is to be able to run this in Google Colab. 
+As you can see, this is a fork of a fork for us poor folk who don't have a GPU with 20GB of VRAM to play with. The idea is to be able to run this in an L4 instance on Google Colab (min 20GB VRAM required). 
 
-To run, open _HiDream_4bq.ipynb_ in Colab (there's a button in the file you can use). It uses an L4 instance (min 20GB VRAM required). Be warned, the initial install when you start the notebook takes quite a while, but be patient and it'll eventually finish. When it's done, restart the session and run the next frame to get the gradio interface, then have fun!
+To run, open _HiDream_4bq.ipynb_ in Colab (there's a button in the file you can use) and run the first cell. Be warned, it'll take quite a while to run, but be patient and it'll eventually finish. When it's done, restart the session (there'll be a button at the bottom of the cell's output; press it), then run the next frame to get the gradio interface.  Congratulations! The world is now yours.
 
 # HiDream-I1 4Bit Quantized Model
 
